@@ -1,0 +1,132 @@
+.main-header
+  .main-header__contents
+    .main-header__contents__top 
+      %h1 Shun Aoki's portfolio.
+      .main-header__contents__sns
+        = link_to "https://twitter.com/a1_shun", class: "contents__btn" do
+          = icon('fab', 'twitter')
+        = link_to "https://shunmaro.com/", class: "contents__btn__2" do 
+          = icon('fas', 'blog')
+    .main-header__bottom
+      %ul
+        %li
+          %a{:href => "#profile"} PROFILE
+        %li
+          %a{:href => "#works"} WORKS
+        %li
+          %a{:href => "#skill"} SKILL
+        %li
+          %a{:href => "#contact"} CONTACT
+.main-img
+.main-contents
+  .main-contents__profile 
+    #profile
+      PROFILE
+  .main-contents__profile__item
+    =image_tag 'profileimg.jpg' ,class: "main-contents__profile__img"
+    shun aoki
+  .main-contents__profile__text 
+    ご覧いただきましてありがとうざいます。平成5年生まれの青木 駿と申します。<br>
+    前職ではデザイン系ステーショナリーメーカーで営業職を4年間勤めていました。<br>
+    2019年11月より3ヶ月間、エンジニア養成スクールのTECH::EXPERT 短期転職コースを受講し卒業後、今現在も学習を継続中です。
+  .card__section
+    .card__section--title
+      #works
+        WORKS
+    .card__list
+      .card__list--item
+        =image_tag 'word-of-mouth.png' ,class: "card__list--img"
+        .card__list--message
+          word-of-mouth
+        .card__list--message2
+          プログラミングスクールの口コミ共有サイトです。<br>
+          スクール別、投稿者別の口コミを閲覧できます。<br>
+          %a{:href => "http://52.69.45.22//"} こちらから確認できます<br>
+          %a{:href => "https://github.com/shun-pro/word-of-mouth"}githubはこちら
+      .card__list--item
+        =image_tag 'mercari.png' ,class: "card__list--img"
+        .card__list--message 
+          メルカリクローンアプリ
+        .card__list--message2 
+          メルカリのクローンアプリです。<br>
+          5人で開発しました。<br>
+          %a{:href => "http://3.114.231.56/"}こちらから確認できます<br>
+          %a{:href => "https://github.com/shun-pro/freemarket_sample_65f"}githubはこちら
+      .card__list--item 
+        =image_tag 'shunblog.png' ,class: "card__list--img"
+        .card__list--message 
+          SHUN BLOG
+        .card__list--message2 
+          WordPressで開設した個人ブログです。<br>
+          日々学んだことをアウトプットしています。<br>
+          %a{:href => "https://shunmaro.com/"}こちらから確認できます<br>
+  %section#skill.section
+  .inner
+    .section-title-block
+      %h2.section-title 
+        #skill
+          SKILL
+      %p.section-desc
+    .card-wrapper
+      .card
+        .skill-icon
+          %img{:alt => "", :src => "img/skill/icon_skill.png"}/
+        .skill-desc
+          %h3.skill-desc-title HTML(haml)/CSS(sass)
+          .rating
+            %p.rate.rate3
+          %p.text haml、scss記法の学習中です。アプリケーション開発を通してマークアップは学んできましたが<br>今後はスピード感も意識できるようにと精進中です。
+      .card
+        .skill-icon
+          %img{:alt => "", :src => "img/skill/icon_skill.png"}/
+        .skill-desc
+          %h3.skill-desc-title JavaScript、jQuery
+          .rating
+            %p.rate.rate2
+          %p.text 基礎から学習中です。
+      .card
+        .skill-icon
+          %img{:alt => "", :src => "img/skill/icon_skill.png"}/
+        .skill-desc
+          %h3.skill-desc-title WordPress
+          .rating
+            %p.rate.rate3
+          %p.text 個人ブログ「SHUN BLOG」を開設しました。ただ案件などをこなしたわけではないので、まだ実務レベルではありません。プログラミングに関すること、ライフハック系の情報を発信しています。
+      .card
+        .skill-icon
+          %img{:alt => "", :src => "img/skill/icon_skill.png"}/
+        .skill-desc
+          %h3.skill-desc-title Ruby、Ruby on lails
+          .rating
+            %p.rate.rate4
+          %p.text 10週間のプログラミングスクール在学中に主に使用した言語です。基本的な仕組みは理解できていますが応用的な使い方は引き続き学習中です。
+      .card
+        .skill-icon
+          %img{:alt => "", :src => "img/skill/icon_skill.png"}/
+        .skill-desc
+          %h3.skill-desc-title AWS
+          .rating
+            %p.rate.rate3
+          %p.text アプリ開発を通して数回AWSへのデプロイを行いました。仕組みは理解していますが、最初から最後まで何も参考にせずこなせるレベルではありません。
+  .main-contents__contact
+    #contact
+      CONTACT
+  .main-contents__contact__message
+    何かございましたら
+    = link_to "https://twitter.com/a1_shun", class: "message__btn" do
+      Twitter
+    のDMからご連絡いただければ幸いです。
+  .main-footer
+    .main-footer__link 
+      %ul
+        %li 
+          %a{:href =>"#profile"} PROFILE
+        %li 
+          %a{:href =>"#works"} WORKS
+        %li 
+          %a{:href =>"#skill"} SKILL
+        %li 
+          %a{:href =>"#contact"} CONTACT
+
+    .main-footer__contents 
+    %p Copyright©Shun Aoki All Right Rserved.
